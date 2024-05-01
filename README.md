@@ -1,6 +1,6 @@
 ## ABOUT
 
-Having previously learned `C` and `C++`, I've always been intrigued by `Assembly` but never had the chance to fully explore it. Now, it's time to change that.
+Having previously learned `C` and `C++`, I've always been intrigued by `Assembly` but never had the chance to fully explore it.
 
 This repository serves as a personal project for uploading my `Assembly` files. You can follow along with my document progress [here](https://jotavare.github.io/x86_assembly_nasm/).
 
