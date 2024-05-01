@@ -1,4 +1,4 @@
-.section data
+section data
     ; name, size, inicial value
 
     ; DB = define byte (1 byte) = 8 bits
