@@ -4,12 +4,12 @@ section .text
     global _start
 
 _start:
-    ;MOB eax, 1
-    ;MOB ebx, 2
+    ;MOV eax, 1
+    ;MOV ebx, 2
 
     ; 0b is a prefix for binary numbers
     MOV al, 0b11111111
-    MOB bl, 0b00000001
+    MOV bl, 0b00000001
 
     ; takes the value of eax and adds the value of ebx
     ; stores the result in eax
