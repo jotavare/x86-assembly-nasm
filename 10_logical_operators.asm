@@ -15,7 +15,7 @@ _start:
     ; 1000 = 8
 
     mov eax, 0b1010
-    mob ebx, 0b1100
+    mov ebx, 0b1100
     or eax, ebx
 
     ; or means if one of the bits is 1 then the result is 1
