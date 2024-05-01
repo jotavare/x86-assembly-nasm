@@ -9,7 +9,7 @@
 section .data
 
 ; actual code being run
-section. text
+section  .text
 
 ; we need some external to this program so it knows where the program is
 global _start
