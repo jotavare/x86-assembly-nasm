@@ -50,4 +50,6 @@ _start:
     ; ----
     ; 0110 = 6
 
+    mov eax, 1
+    mov ebx, 1
     int 80h

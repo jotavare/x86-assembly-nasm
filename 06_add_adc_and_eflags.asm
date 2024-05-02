@@ -21,8 +21,9 @@ _start:
     ; the carry flag is gonna be added to the result
     ADC ah, 0
 
-    ; exit the program
-    INT 80h
+    MOV eax, 1
+    MOV ebx, 1
+    INT 80h; exit the program
 
 ;----------------
 ;     1111 1111

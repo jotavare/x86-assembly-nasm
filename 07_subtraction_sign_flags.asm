@@ -22,4 +22,7 @@ _start:
     ; -2 + 2
 
     SUB eax, ebx
+
+    MOV eax, 1
+    MOV ebx, 1
     INT 80h

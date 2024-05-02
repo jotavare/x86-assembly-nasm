@@ -37,7 +37,8 @@ _start:
     ; It's worth noting that IMUL with a single operand will multiply the value in AL by the operand and store the result in AX
     ; Since AL contains a signed value (-1) and BL contains 2, the result of the multiplication will be -2
     ; ----
-    
+    mov eax, 1
+    mov ebx, 1
     int 80h
 
     ; ----
