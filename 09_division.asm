@@ -13,7 +13,8 @@ _start:
         ; signed division
         ; same logic as signed multiplication
         ; ----
-
+        mov eax, 1
+        mov ebx, 1
         int 80h
 
         ; ----

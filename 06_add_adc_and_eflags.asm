@@ -4,12 +4,12 @@ section .text
     global _start
 
 _start:
-    ;MOB eax, 1
-    ;MOB ebx, 2
+    ;MOV eax, 1
+    ;MOV ebx, 2
 
     ; 0b is a prefix for binary numbers
     MOV al, 0b11111111
-    MOB bl, 0b00000001
+    MOV bl, 0b00000001
 
     ; takes the value of eax and adds the value of ebx
     ; stores the result in eax
@@ -21,8 +21,9 @@ _start:
     ; the carry flag is gonna be added to the result
     ADC ah, 0
 
-    ; exit the program
-    INT 80h
+    MOV eax, 1
+    MOV ebx, 1
+    INT 80h; exit the program
 
 ;----------------
 ;     1111 1111
