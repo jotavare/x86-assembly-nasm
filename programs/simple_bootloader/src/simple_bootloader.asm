@@ -9,4 +9,4 @@ halt:
     jmp halt            ; Infinite loop, jumping back to itself, effectively halting the processor indefinitely
 
 times 510-($-$$) db 0   ; fill the rest of the bootloader space with zeros to ensure it's padded up to 510 bytes
-dw 0aa55h               ; boot signature, indicating to the BIOS that this is a bootable device
+dw 0xaa55               ; boot signature, indicating to the BIOS that this is a bootable device
