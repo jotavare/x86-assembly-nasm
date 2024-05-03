@@ -1,2 +1,6 @@
+# Ignore files
 *.json
 *.o
+
+# Ignore directories
+.vscode/
