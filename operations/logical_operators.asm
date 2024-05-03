@@ -2,10 +2,10 @@ section .text
     global _start
 
 _start:
-
     ; binary form because its easier to look with operators
+
     mov eax, 0b1010
-    mob ebx, 0b1100
+    mov ebx, 0b1100
     and eax, ebx
 
     ; and means if both bits are 1 then the result is 1

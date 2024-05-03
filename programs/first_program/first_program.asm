@@ -10,16 +10,15 @@ section .data
 
 ; actual code being run
 section  .text
-
-; we need some external to this program so it knows where the program is
-global _start
+    ; we need some external to this program so it knows where the program is
+    global _start
 
 ;  declaring a label, a segment of the code
 _start:
-
     ; move from one location to another
     ; move destination, source
     ; move 1 to eax
-    MOV eax,1 ; what system call we are using
-    MOV ebx,1 ; output status code of the program
-    INT 80h ; calls the system, one means exit
+
+    mov eax,1   ; what system call we are using
+    mov ebx,1   ; output status code of the program
+    int 80h     ; calls the system, one means exit
