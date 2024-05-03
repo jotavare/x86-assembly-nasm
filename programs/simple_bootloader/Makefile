@@ -1,4 +1,4 @@
-# Compiler
+# Assembler
 ASM=nasm
 
 # Directories
