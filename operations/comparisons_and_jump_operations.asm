@@ -1,5 +1,3 @@
-section .data
-
 section .text
     global _start
 
@@ -37,4 +35,3 @@ less_than:
 
 end:
     int 80h
-    

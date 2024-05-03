@@ -2,8 +2,7 @@ section .data
     list DB 1,2,3,4
 
 section .text
-
-global _start
+    global _start
 
 _start:
     mov eax, 0

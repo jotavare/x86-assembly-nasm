@@ -10,12 +10,11 @@ section .data
 									; 0 = null character
 
 section .text
-
-global main 	; this is because we need a main function in order to work with gcc
+	global main		; this is because we need a main function in order to work with gcc
 
 main:
-	PUSH msg 	; take the data and push to the end of the stack
-	PUSH fmt 	; the order is important
-	CALL printf
-	PUSH 1
-	CALL exit
+	push msg 		; take the data and push to the end of the stack
+	push fmt		; the order is important
+	call printf
+	push 1
+	call exit
