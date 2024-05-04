@@ -1,8 +1,34 @@
+; hex editor jeex
+
 org 0x7c00              ; set origin to 0x7c00, default address where the BIOS loads the bootloader
 bits 16                 ; set the assembly to 16-bit mode, typical for bootloader code
 
+jmp short main          ; jump to the main function
+nop                     ; no operation, padding to ensure the bootloader is at least 2 bytes
+
+bdb_eom:                    db 'MSWIN4.1'       ; Bootloader end of message
+bdb_bytes_per_sector:       dw 512              ; Bytes per sector
+bdb_sectors_per_cluster:    db 1                ; Sectors per cluster
+bdb_reserved_sectors:       dw 1                ; Reserved sectors
+bdb_fat_count:              db 2                ; FAT count
+bdb_dir_entries_count:      dw 0e0h             ; Directory entries count
+bdb_total_sectors:          dw 2880             ; Total sectors
+bdb_media_descriptor_type:  db 0f0h             ; Media descriptor type
+bdb_sectors_per_fat:        dw 9                ; Sectors per FAT
+bdb_sectors_per_track:      dw 18               ; Sectors per track
+bdb_heads:                  dw 2                ; Heads
+bdb_hidden_sectors:         dd 0                ; Hidden sectors
+bdb_large_sector_count:     dd 0                ; Large sector count
+
+ebr_drive_number:           db 0                ; Drive number
+                            db 0                ; Reserved
+ebr_signature:              db 29h              ; Signature
+ebr_volume_id:              dd 12h,34h,56h,78h  ; Volume ID
+ebr_volume_label:           db 'FAT12      '    ; Volume label (11 bytes)
+ebr_system_id:              db 'FAT12   '       ; System ID (8 bytes)
+
 main:
-    mov ax, 0          ; clear the ax register
+    mov ax, 0           ; clear the ax register
     mov ds, ax          ; set the data segment to 0, effectively clearing it
     mov es, ax          ; set the extra segment to 0, effectively clearing it
     mov ss, ax          ; set the stack segment to 0, effectively clearing it

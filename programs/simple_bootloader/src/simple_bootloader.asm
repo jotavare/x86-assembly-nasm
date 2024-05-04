@@ -1,5 +1,4 @@
 org 0x7c00              ; set origin to 0x7c00, default address where the BIOS loads the bootloader
-
 bits 16                 ; set the assembly to 16-bit mode, typical for bootloader code
 
 main:

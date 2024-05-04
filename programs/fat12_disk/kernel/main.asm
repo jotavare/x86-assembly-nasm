@@ -2,7 +2,7 @@ org 0x7c00              ; set origin to 0x7c00, default address where the BIOS l
 bits 16                 ; set the assembly to 16-bit mode, typical for bootloader code
 
 main:
-    mov ax, 0          ; clear the ax register
+    mov ax, 0           ; clear the ax register
     mov ds, ax          ; set the data segment to 0, effectively clearing it
     mov es, ax          ; set the extra segment to 0, effectively clearing it
     mov ss, ax          ; set the stack segment to 0, effectively clearing it
