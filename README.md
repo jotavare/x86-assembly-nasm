@@ -1,6 +1,6 @@
 ## ABOUT
 
-Having previously learned `C` and `C++`, I've always been intrigued by `Assembly` but never had the chance to explore it fully.
+Having previously learned `C` and `C++`, I've always been intrigued by `Assembly`.
 
 Here, I will upload my `x86 Assembly` files but, for a clearer and more organized view of my documentation progress, thoughts and references, check my project [documentation](https://jotavare.github.io/x86_assembly_nasm).
 
