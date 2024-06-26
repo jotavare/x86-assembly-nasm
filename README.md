@@ -6,7 +6,11 @@ Here, I will upload my `x86 Assembly` files but, for a clearer and more organize
 
 Another project I want to do after learning the basics of `Assembly` is to redo my [Libft](https://github.com/jotavare/libft) and convert all functions from `C` to `x86 Assembly`, or at least try to. My progress will be available [here](https://github.com/jotavare/libft-x86-assembly).
 
+## CONTRIBUTING
+
+If you find any issues or have suggestions for improvements, feel free to fork the repository and open an issue or submit a pull request.
+
 ## LICENSE
-<p>
-This work is published under the terms of <a href="https://github.com/jotavare/x86-assembly-nasm/blob/main/LICENSE">Unlicense</a>.
-</p>
+
+This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/x86-assembly-nasm/blob/main/LICENSE) file.
+
