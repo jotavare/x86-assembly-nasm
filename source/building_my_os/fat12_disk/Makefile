@@ -2,12 +2,13 @@
 ASM=nasm
 
 # Directories
-SRC_DIR=src
 BUILD_DIR=build
 
-# Floopy disk
-floopy_image: $(BUILD_DIR)/main.img
-$(BUILD_DIR)/main.img: bootloader kernel
+all: floppy_image
+
+# Floppy disk
+floppy_image: $(BUILD_DIR)/main.img
+$(BUILD_DIR)/main.img: $(BUILD_DIR)/bootloader.bin $(BUILD_DIR)/kernel.bin
 	dd if=/dev/zero of=$(BUILD_DIR)/main.img bs=512 count=2880
 	mkfs.fat -F 12 -n "FAT12" $(BUILD_DIR)/main.img
 	dd if=$(BUILD_DIR)/bootloader.bin of=$(BUILD_DIR)/main.img conv=notrunc
@@ -15,10 +16,18 @@ $(BUILD_DIR)/main.img: bootloader kernel
 
 # Bootloader
 bootloader: $(BUILD_DIR)/bootloader.bin
-$(BUILD_DIR)/bootloader.bin:
-	$(ASM) $(SRC_DIR)/bootloader/boot.asm -f bin -o $(BUILD_DIR)/bootloader.bin
+$(BUILD_DIR)/bootloader.bin: bootloader/boot.asm | $(BUILD_DIR)
+	$(ASM) bootloader/boot.asm -f bin -o $(BUILD_DIR)/bootloader.bin
 
 # Kernel
 kernel: $(BUILD_DIR)/kernel.bin
-$(BUILD_DIR)/kernel.bin:
-	$(ASM) $(SRC_DIR)/kernel/main.asm -f bin -o $(BUILD_DIR)/kernel.bin
+$(BUILD_DIR)/kernel.bin: kernel/main.asm | $(BUILD_DIR)
+	$(ASM) kernel/main.asm -f bin -o $(BUILD_DIR)/kernel.bin
+
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
+
+clean:
+	rm -rf $(BUILD_DIR)
+
+.PHONY: all floppy_image bootloader kernel clean

@@ -18,7 +18,7 @@ main:
 
     mov ebx, eax
     mov eax, 4
-    mov ecx msg
+    mov ecx, msg
     mov edx, 16
 
     mov eax, 1

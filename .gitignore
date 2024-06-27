@@ -1,6 +1,14 @@
-# Ignore files
-*.json
+# Build output.
 *.o
+*.bin
+*.img
+build/
 
-# Ignore directories
+# Editor and OS droppings.
 .vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+._*
+Thumbs.db
