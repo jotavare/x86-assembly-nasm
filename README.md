@@ -51,7 +51,7 @@ assembles a flat binary into a floppy image, and need `mtools` and
 
 ## CONTRIBUTING
 
-This repository holds finished notes and exercises and is not open to changes.
+This repository is finished and not open to changes.
 
 ## LICENSE
 
