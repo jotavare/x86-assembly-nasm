@@ -15,6 +15,7 @@ _start:
 
     movss xmm1, [y]
     addss xmm0, xmm1
+    mov eax, 1
     mov ebx, 1
     int 80h
 

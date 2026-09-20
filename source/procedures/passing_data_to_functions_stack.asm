@@ -1,3 +1,6 @@
+section .text
+    global main
+
 addTwo:
     push ebp              ; push ebp to stack
     mov ebp, esp          ; set ebp to esp (ret return address)

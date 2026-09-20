@@ -17,3 +17,7 @@ _start:
     mov eax, 2 ; 0010
     sal eax, 1  ; it shifts the bits to the left but it keeps the sign bit
                 ; this equivalent to multiplying by 2 but it's faster
+
+    mov eax, 1  ; exit syscall
+    mov ebx, 1  ; exit status
+    int 80h
