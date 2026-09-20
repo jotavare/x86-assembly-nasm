@@ -1,18 +1,3 @@
-<p align="center">
-	<img src="https://img.shields.io/badge/status-finished-success?color=%2312bab9&style=flat-square"/>
-	<img src="https://img.shields.io/github/languages/top/jotavare/x86-assembly-nasm?color=%2312bab9&style=flat-square"/>
-	<img src="https://img.shields.io/github/last-commit/jotavare/x86-assembly-nasm?color=%2312bab9&style=flat-square"/>
-	<a href='https://www.linkedin.com/in/jotavare' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/LinkedIn-blue?style=flat-square'/></a>
-</p>
-
-<p align="center">
-	<a href="#about">About</a> •
-	<a href="#usage">Usage</a> •
-	<a href="#contents">Contents</a> •
-	<a href="#contributing">Contributing</a> •
-	<a href="#license">License</a>
-</p>
-
 ## ABOUT
 
 Having previously learned `C` and `C++`, I've always been intrigued by `Assembly`.
@@ -48,12 +33,3 @@ assembles a flat binary into a floppy image, and need `mtools` and
 | `procedures` | Calling conventions, the stack, and calling into C |
 | `file_management` | Opening, reading, writing and seeking |
 | `building_my_os` | A bootloader, BIOS printing, and a FAT12 floppy image |
-
-## CONTRIBUTING
-
-This repository is finished and not open to changes.
-
-## LICENSE
-
-This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/x86-assembly-nasm/blob/main/LICENSE) file.
-
