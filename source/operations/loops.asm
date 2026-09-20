@@ -12,7 +12,7 @@ loop:
     mov bl,[list + eax]
     add cl, bl
     inc eax     ; eax = eax + 1 ... can also do add eax, 1
-    cmp eax, 4  ; can aslo do cmp [list + eax], 4
+    cmp eax, 4  ; can also do cmp [list + eax], 4
     JE end
     JMP loop
 

@@ -34,7 +34,7 @@ _start:
     mov ebx, 1
     int 80h
 
-    ; imul = signed mutiplication assumes that the value is signed
+    ; imul = signed multiplication assumes that the value is signed
     ; the value of al is -1 because 0xff is a signed value
 
     ; why is 0xff (255) shows in gdb as -1?

@@ -1,4 +1,4 @@
-; name, size, inicial value
+; name, size, initial value
 ; DB = define byte (1 byte) = 8 bits
 ; DW = define word (2 bytes) = 16 bits
 ; DD = define double word (4 bytes) = 32 bits
